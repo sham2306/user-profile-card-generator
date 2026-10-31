@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Profile Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2>PROFILE<span>STUDIO.</span></h2>
+        <div class="nav-label">PROFILE GENERATOR</div>
+    </nav>
+
+    <main class="main-container">
+
+        <section class="heading">
+            <span class="tag">CREATE YOUR IDENTITY</span>
+            <h1>Build Your <span>Professional</span> Profile</h1>
+            <p>Create a beautiful profile card that represents
+               your skills and professional identity.</p>
+        </section>
+
+        <div class="workspace">
+
+            <!-- FORM SECTION -->
+
+            <section class="form-section">
+
+                <h2>Personal Information</h2>
+                <p class="section-desc">
+                    Enter your professional details.
+                </p>
+
+                <form id="profileForm">
+
+                    <label>Full Name</label>
+                    <input type="text" id="name"
+                           placeholder="Enter your full name"
+                           maxlength="80" required>
+
+                    <label>Profession</label>
+                    <input type="text" id="profession"
+                           placeholder="e.g. Full Stack Developer"
+                           maxlength="100" required>
+
+                    <label>About You</label>
+                    <textarea id="bio"
+                              placeholder="Write a short professional bio..."
+                              maxlength="500" required></textarea>
+
+                    <label>Skills</label>
+                    <input type="text" id="skills"
+                           placeholder="Python, JavaScript, React">
+
+                    <label>GitHub Profile</label>
+                    <input type="url" id="github"
+                           placeholder="https://github.com/username">
+
+                    <label>LinkedIn Profile</label>
+                    <input type="url" id="linkedin"
+                           placeholder="https://linkedin.com/in/username">
+
+                    <button type="submit">
+                        Generate Profile →
+                    </button>
+
+                </form>
+
+                <div id="message"></div>
+
+            </section>
+
+            <!-- PREVIEW SECTION -->
+
+            <section class="preview-section">
+
+                <div class="preview-heading">
+                    <h2>Live Result</h2>
+                    <span>PROFILE PREVIEW</span>
+                </div>
+
+                <div id="profilePreview">
+
+                    <div class="empty-preview">
+                        <div class="empty-icon">✦</div>
+                        <h3>Your profile awaits</h3>
+                        <p>Fill in your details and generate
+                           your professional profile card.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Profile Studio. Built with Node.js & MongoDB.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
